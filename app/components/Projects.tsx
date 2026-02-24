@@ -50,15 +50,15 @@ export default function Projects() {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="bg-[#111] border border-red-900 p-6 rounded-xl 
-                     hover:border-red-600 hover:shadow-lg 
-                     hover:shadow-red-900/20 transition duration-300"
+          className="bg-white border border-gray-200 p-6 rounded-xl
+                    hover:border-indigo-300 hover:shadow-lg
+                    hover:shadow-indigo-100 transition duration-300"
         >
-          <h3 className="text-xl font-semibold text-red-500">
+          <h3 className="text-xl font-semibold text-gray-900">
             {project.name}
           </h3>
 
-          <p className="text-gray-400 mt-3">
+          <p className="text-gray-600 mt-3 leading-relaxed">
             {project.description}
           </p>
 
@@ -67,7 +67,7 @@ export default function Projects() {
               {project.tech_stack.map((tech, index) => (
                 <span
                   key={index}
-                  className="text-xs bg-red-900/40 text-red-400 px-2 py-1 rounded"
+                  className="text-xs bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full"
                 >
                   {tech}
                 </span>
@@ -81,7 +81,7 @@ export default function Projects() {
                 href={project.github_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-red-400 hover:text-red-300 transition"
+                className="text-sm text-indigo-600 hover:text-indigo-700 font-medium transition"
               >
                 GitHub →
               </a>
@@ -92,7 +92,7 @@ export default function Projects() {
                 href={project.live_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-red-400 hover:text-red-300 transition"
+                className="text-sm text-indigo-600 hover:text-indigo-700 font-medium transition"
               >
                 Live Demo →
               </a>
