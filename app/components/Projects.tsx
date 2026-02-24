@@ -18,7 +18,6 @@ export default function Projects() {
 
   useEffect(() => {
     fetch("https://portfolio-service-xyh2.onrender.com/projects")
-    fetch("https://portfolio-service-xyh2.onrender.com")
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         return res.json();
